@@ -5,8 +5,57 @@
     --color-text-button: #FFF;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+    /* skriv 1 når du er færdig*/
+    --hide-overlay: 1;
 }
 
 
 /* Begynd her... */
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 16px;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+
+button{
+    background-color: #3D7BFA;
+    color: white;
+    margin-top: 2rem;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+    gap: 3rem;
+    padding: 50px;
+
+}
+
+.col1{
+    padding: 25px;
+    margin-top: 5rem;
+}
+
+.col2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.row1, .row2, .row3{
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+img{
+    border-radius: 20px;
+}
